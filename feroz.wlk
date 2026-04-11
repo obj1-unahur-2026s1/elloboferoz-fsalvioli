@@ -3,6 +3,9 @@
   y devolvera lo que haya estructurado en el return del method
 */
 import caperucita.*
+import canasta.*
+import abuelita.*
+
 object feroz {
     var peso = 10
     const peso_original = 10

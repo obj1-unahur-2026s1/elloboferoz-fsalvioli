@@ -2,7 +2,7 @@ object canasta {
     var cantManzanas = 6
 
     method peso() {
-        cantManzanas * 0.2
+        return cantManzanas * 0.2
     }
 
     method manzanaPerdida(cantidad) {

@@ -1,10 +1,10 @@
 import canasta.*
 object caperucita {
     var peso = 60 // se conoce internamente, pero no de manera global
+    var pesoCanasta = canasta.peso()
 
-    method peso() = peso // con un method se conoce de forma global si se consulta
+    method peso() {
+       return pesoCanasta + peso 
+    } // con un method se conoce de forma global si se consulta
 
-    method pesoConCanasta() {
-        return peso + canasta.peso()
-    }
 }
