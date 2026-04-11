@@ -5,8 +5,9 @@
 import caperucita.*
 object feroz {
   var peso = 10
+  const peso_original = 10
 
-  method estaSaludable(){
+  method estaSaludable() {
     return peso.between(20, 150)
   }
 
@@ -18,4 +19,9 @@ object feroz {
   }
 
   method peso() = peso
+
+  method crisis() {
+    peso = peso_original
+    return peso
+  }
 }
