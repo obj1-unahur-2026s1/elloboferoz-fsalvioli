@@ -4,24 +4,28 @@
 */
 import caperucita.*
 object feroz {
-  var peso = 10
-  const peso_original = 10
+    var peso = 10
+    const peso_original = 10
 
-  method estaSaludable() {
-    return peso.between(20, 150)
-  }
+    method estaSaludable() {
+      return peso.between(20, 150)
+    }
 
-  method comer(comestible) {
-    /* cuando llamemos al method, pasandole otro objeto como "caperucita" que tiene de peso 70
-       hara: peso = peso + caperucita.peso() * 0.1
-    */
-    peso = peso + comestible.peso() * 0.1
-  }
+    method comer(comestible) {
+      /* cuando llamemos al method, pasandole otro objeto como "caperucita" que tiene de peso 70
+        hara: peso = peso + caperucita.peso() * 0.1
+      */
+      peso = peso + comestible.peso() * 0.1
+    }
 
-  method peso() = peso
+    method peso() = peso
 
-  method crisis() {
-    peso = peso_original
-    return peso
-  }
+    method crisis() {
+      peso = peso_original
+      return peso
+    }
+
+    method correr() {
+      peso = peso - 1
+    }
 }
